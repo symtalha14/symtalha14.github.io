@@ -11,3 +11,83 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ul{
+  list-style: none;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 33.33fr 33.33fr 33.33fr;
+  grid-template-rows: 33.33fr 33.33fr 33.33fr;
+}
+
+ul li{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 300px;
+  max-height: fit-content;
+  background-color: #fff;
+  margin: 2px;
+  padding: 14px;
+  border: 1px solid lightgray;
+  color: darkslategray;
+}
+ul li:hover{
+  cursor: pointer;
+  background: rgba(144, 238, 144, 0.472);
+  transition: all .3s ease-in-out;
+}
+ul li h2{
+  font-size: 21px;
+}
+ul li .top_bar{
+  display: flex;
+  width: 100%;
+  font-size: 14px;
+  justify-content: space-between;
+}
+ul li .bottom_bar{
+  display: flex;
+  width: 100%;
+  font-size: 14px;
+  justify-content: space-between;
+}
+
+.searchBox{
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  font-size: 20px;
+  margin-left: 25px;
+}
+
+.controls{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.button{
+  padding: 6px;
+  border-radius: 10px;
+  color: crimson;
+  border-color: crimson;
+  background: #fff;
+  font-size: 12px;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid;
+  height: fit-content;
+  margin: 10px;
+
+}
+
+
+.button:hover{
+  background: crimson;
+  color: #fff;
+}
+.flexBox{
+  display: flex;
+
+}
